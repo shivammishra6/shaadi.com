@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="shaadi.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 80%;
+        }
+        .style5
+        {
+            width: 30%;
+        }
+        .style6
+        {
+            width: 100%;
+        }
+        .style7
+        {
+            width: 242px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        <table align="center" class="style1">
+            <tr>
+                <td bgcolor="#FF6666">
+                    <table class="style6">
+                        <tr>
+                            <td class="style7">
+                                <asp:Image ID="Image1" runat="server" Height="138px" ImageUrl="~/SHADI.jpg" 
+                                    style="margin-left: 28px" Width="185px" />
+                            </td>
+                            <td style="font-weight: bold; font-size: 50px; color: white;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shaadi.com</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#FF6666" height="50">
+                    <table align="center" class="style5">
+                        <tr>
+                            <td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:Label ID="Label2" runat="server" ForeColor="White" 
+                                    Text="@Copyright Shaadi.com 2024"></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+    </form>
+</body>
+</html>
